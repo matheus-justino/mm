@@ -1,0 +1,60 @@
+{
+    "Upper-clothes": {
+        "w": 104,
+        "h": 92,
+        "name": "Roupas do torso",
+        "image": "cloth-ai/debug-results/predicted_Upper-clothes.png",
+        "dominant_color": "",
+        "color_palette": [
+            [
+                246,
+                134,
+                133
+            ],
+            [
+                52,
+                35,
+                38
+            ],
+            [
+                150,
+                53,
+                42
+            ],
+            [
+                186,
+                70,
+                54
+            ]
+        ]
+    },
+    "Pants": {
+        "w": 267,
+        "h": 119,
+        "name": "Cal\u00e7as",
+        "image": "cloth-ai/debug-results/predicted_Pants.png",
+        "dominant_color": "",
+        "color_palette": [
+            [
+                44,
+                70,
+                104
+            ],
+            [
+                227,
+                221,
+                219
+            ],
+            [
+                148,
+                164,
+                186
+            ],
+            [
+                108,
+                140,
+                188
+            ]
+        ]
+    }
+}
