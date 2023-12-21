@@ -1,0 +1,45 @@
+{%if loadedCloth%}
+    <div>
+        <div style="display: flex; flex-direction: row">
+            {{interactionButton | safe if active == false else ""}}
+            {{transform(message) | safe if message != "none" else ""}}
+            {% if imageLoading == true %}
+                <div id="loader">
+                    <img src="/MMM-ClothAI/svg-loaders/svg-loaders/tail-spin.svg">
+                </div>
+            {% else %}
+                <div>
+                    {%if showTakenPicture%}
+                        {%for clothLabel in clothData%}
+                            <center>
+                                <p>{{labelsToLabels[clothLabel]}}</p>
+                                <div style=""></div>
+                                <img src="{{clothData[clothLabel].image}}" />
+                            </center>
+                        {%else%}
+                        {%endfor%}
+                    {%else%}
+                    {%endif%}
+                </div>
+                <div style="margin-left: 1rem;">
+                    {% for match in imageMatches %}
+                        <center>
+							<p style="max-width: 15rem;" class="bright">{{match.top_text}}</p>
+							<div style="display: flex; flex-direction: row; justify-content: center; justify-items: center;">
+								<div>
+									<img style="border-radius: .3rem;" src="{{match.image_url}}" />
+								</div>
+								<div style="margin-top: auto; margin-bottom: auto; margin-left: 1rem;">
+									<div class="bright" style="height: 20px; width: 20px; background-color: rgb({{match.color}}); margin: auto; border-radius: .3rem; border-color: white; border: 3px solid;"></div>
+								</div>
+							</div>
+						</center>
+                    {% else %}
+                        <p></p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+{%else%}
+{%endif%}

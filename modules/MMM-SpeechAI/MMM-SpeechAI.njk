@@ -1,0 +1,11 @@
+<div style="margin: auto;">
+    {{"<p>Desculpe, não entendi oque você disse.</p>" | safe if notRecognized else ""}}
+    {{"<p>Ocorreu um erro inesperado.</p>" | safe if error else ""}}
+    {# {{"<p>Atividade de voz detectada!</p>" | safe if voiceActivity else "<p>Sem atividade de voz</p>" | safe}} #}
+    {% if initializing %}
+        <p>{{initializationMessage}}</p>
+    {% else %}
+        <p></p>
+    {% endif %}
+    {{"<img width='120px' src='/MMM-ClothAI/svg-loaders/svg-loaders/puff.svg'>" | safe if solListening else ""}}
+</div>

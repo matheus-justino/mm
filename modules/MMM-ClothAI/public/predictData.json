@@ -1,0 +1,68 @@
+{
+    "Upper-clothes": {
+        "w": 54,
+        "h": 36,
+        "name": "Roupas do torso",
+        "image": "modules/MMM-ClothAI/public/predicted_Upper-clothes.png",
+        "dominant_color": [
+            52,
+            61,
+            61
+        ],
+        "color_palette": [
+            [
+                52,
+                61,
+                61
+            ],
+            [
+                212,
+                215,
+                211
+            ],
+            [
+                125,
+                143,
+                162
+            ],
+            [
+                150,
+                167,
+                173
+            ]
+        ]
+    },
+    "Pants": {
+        "w": 108,
+        "h": 344,
+        "name": "Cal\u00e7as",
+        "image": "modules/MMM-ClothAI/public/predicted_Pants.png",
+        "dominant_color": [
+            87,
+            95,
+            96
+        ],
+        "color_palette": [
+            [
+                87,
+                95,
+                96
+            ],
+            [
+                197,
+                211,
+                221
+            ],
+            [
+                162,
+                175,
+                184
+            ],
+            [
+                173,
+                173,
+                162
+            ]
+        ]
+    }
+}
