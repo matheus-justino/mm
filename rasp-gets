@@ -1,4 +1,8 @@
 # Tensorflow
+Testar sem, mas se der errado, usar:
+$ curl -fsSL https://get.docker.com -o get-docker.sh
+$ sudo sh get-docker.sh
+
 $ git clone https://github.com/tensorflow/tensorflow.git
 $ cd tensorflow
 $ git checkout branch_name  # r1.9, r1.10, etc.
@@ -10,3 +14,7 @@ $ pip install tensorflow-{{version}}-cp35-none-linux_armv7l.whl
 $ pip install torch torchvision torchaudio
 $ pip install opencv-python
 $ pip install numpy --upgrade
+
+# HuggingFace
+No diretório do ASTRA-MM:
+$ git clone https://github.com/modzy/hugging-face-raspberry-pi.git
