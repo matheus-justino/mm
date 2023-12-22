@@ -1,0 +1,12 @@
+# Tensorflow
+$ git clone https://github.com/tensorflow/tensorflow.git
+$ cd tensorflow
+$ git checkout branch_name  # r1.9, r1.10, etc.
+$ tensorflow/tools/ci_build/ci_build.sh PI-PYTHON37 \
+    tensorflow/tools/ci_build/pi/build_raspberry_pi.sh
+$ pip install tensorflow-{{version}}-cp35-none-linux_armv7l.whl
+
+# PyTorch
+$ pip install torch torchvision torchaudio
+$ pip install opencv-python
+$ pip install numpy --upgrade
